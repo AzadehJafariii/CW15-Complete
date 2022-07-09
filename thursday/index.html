@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./styles/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <div class="calcHeader">
+           <input id="result" placeholder="0"/>
+        </div>
+        <div class="calcBody">
+          <div class="row">
+            <input
+              type="button"
+              name="reset"
+              id="reset"
+              value="C"
+              onclick="clearDisplay()"
+            />
+            <h5>JavaScript Calculator</h5>
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              name="seven"
+              id="seven"
+              value="7"
+              onclick="addToCalc(seven.value)"
+            />
+            <input
+              type="button"
+              name="eight"
+              id="eight"
+              value="8"
+              onclick="addToCalc(eight.value)"
+            />
+            <input
+              type="button"
+              name="nine"
+              id="nine"
+              value="9"
+              onclick="addToCalc(nine.value)"
+            />
+            <input
+              type="button"
+              name="add"
+              id="add"
+              value="+"
+              onclick="addToCalc(add.value)"
+            />
+            <input type="button" name="abs" id="abs" value="|x|" onclick="abs(abs.value)"/>
+            <input type="button" name="ceil" id="ceil" value="ce" onclick="ceil(ceil.value)"/>
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              name="four"
+              id="four"
+              value="4"
+              onclick="addToCalc(four.value)"
+            />
+            <input
+              type="button"
+              name="five"
+              id="five"
+              value="5"
+              onclick="addToCalc(five.value)"
+            />
+            <input
+              type="button"
+              name="six"
+              id="six"
+              value="6"
+              onclick="addToCalc(six.value)"
+            />
+            <input
+              type="button"
+              name="minus"
+              id="minus"
+              value="-"
+              onclick="addToCalc(minus.value)"
+            />
+            <input type="button" name="radical" id="radical" value="√" onclick="sqrt(radical.value)"/>
+            <input type="button" name="floor" id="floor" value="fl" onclick="floor(floor.value)" />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              name="one"
+              id="one"
+              value="1"
+              onclick="addToCalc(one.value)"
+            />
+            <input
+              type="button"
+              name="two"
+              id="two"
+              value="2"
+              onclick="addToCalc(two.value)"
+            />
+            <input
+              type="button"
+              name="three"
+              id="three"
+              value="3"
+              onclick="addToCalc(three.value)"
+            />
+            <input
+              type="button"
+              name="multiply"
+              id="multiply"
+              value="*"
+              onclick="addToCalc(multiply.value)"
+            />
+            <input type="button" name="round" id="round" value="r" onclick="round(round.value)"/>
+            <input
+              type="button"
+              name="power"
+              id="power"
+              value="^"
+              onclick="power(power.value)"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              name="zero"
+              id="zero"
+              value="0"
+              onclick="addToCalc(zero.value)"
+            />
+            <input
+              type="button"
+              name="dot"
+              id="dot"
+              value="."
+              onclick="addToCalc(dot.value)"
+            />
+            <input
+              type="button"
+              name="slash"
+              id="slash"
+              value="/"
+              onclick="addToCalc(slash.value)"
+            />
+            <input
+              type="button"
+              name="equal"
+              id="equal"
+              value="="
+              onclick="finalResult()"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+.title{
+    background-color: antiquewhite;
+}
+.explanation{
+    background-color: aquamarine;
+}
